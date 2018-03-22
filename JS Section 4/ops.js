@@ -10,3 +10,5 @@ console.log(birthYear)
 
 //js does the multiplication
 //then the result from 2016, which is now
+// why, procedence of operators ( which are executed first, and which later )
+//simple math
