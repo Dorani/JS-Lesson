@@ -28,3 +28,14 @@ console.log(age);
 //boolean: logical data type t or f
 //undefined: data type of var which does not have a value yet
 //null: also means non existent
+
+
+//JS has something called Dynamic Typing:
+  //meaning js can figure out the data type of a variable on its own!
+  //we can change the data type of a var later in our code
+
+var fullAge = true;
+console.log(fullAge);
+
+//logging is for debugging, hunt down bugs, we log our data/var to the console
+//great tool to output the data instead of having to worry to write to our webpage
