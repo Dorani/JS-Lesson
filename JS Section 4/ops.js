@@ -12,3 +12,24 @@ console.log(birthYear)
 //then the result from 2016, which is now
 // why, procedence of operators ( which are executed first, and which later )
 //simple math
+
+//visit operator precendence table on MDN
+
+var ageJohn = 30;
+var ageMark = 30;
+
+ageJohn = 3 + 5 * 4 - 6;
+console.log(ageJohn);
+//which takes precendence
+
+//how can we overide this?
+
+ageJohn = (3 + 5) * 4 - 6;
+//grouping take priority here
+//this is why values are different
+console.log(ageJohn);
+
+
+ageJohn++;
+ageMark *= 2;
+console.log(ageJohn + ageMark);
