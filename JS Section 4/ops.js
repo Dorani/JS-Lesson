@@ -33,3 +33,8 @@ console.log(ageJohn);
 ageJohn++;
 ageMark *= 2;
 console.log(ageJohn + ageMark);
+
+//rough start to conditionals:
+if (ageJohn < 100) {
+  console.log('still got time');
+}
