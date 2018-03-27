@@ -33,6 +33,13 @@ if (isMarried){//much faster way, js figures out its false and we go into the el
 // == does type coersion
 // === does not
 
-if ( 23 == '23'){
+if ( 23 == '23'){// js automatically converts var from one data type to another, 23 = 23 the string, js thinks are the same
   console.log("something to print");
 }
+
+//however if we add a third
+
+if ( 24 === '24'){ //does not work, these are not the same, so false
+  console.log("converted?");
+}
+//we usually always use ===
