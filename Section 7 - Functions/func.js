@@ -31,4 +31,17 @@ console.log(ageMarry);
 
 //the point here is that we can use many examples with same logic from one function
 //use it over and over again
-//
+
+
+
+
+
+
+//---------------
+
+
+function yearsToRetirement(name, yearOfBirth) {
+    var age = calculateAge(yearOfBirth);
+}
+
+yearsToRetirement('john', 1990);
