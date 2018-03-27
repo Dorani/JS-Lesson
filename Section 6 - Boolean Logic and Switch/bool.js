@@ -37,6 +37,7 @@ if (age < 20){
 
 
 var job = 'teacher';
+job = prompt('what does john do?');
 switch (job) {
   case 'teacher':
     console.log('john teaches kids');
