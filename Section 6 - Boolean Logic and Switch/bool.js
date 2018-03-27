@@ -34,3 +34,24 @@ if (age < 20){
  } else {
    console.log('John is an old man');
  }
+
+
+var job = 'teacher';
+switch (job) {
+  case 'teacher':
+    console.log('john teaches kids');
+    break;
+  case 'driver':
+    console.log('john drives a cab to work');
+    break;
+  case 'cop':
+    console.log('john helps fight crime');
+    break;
+
+  default://like else statement
+    console.log('john does something else');
+
+
+  //as soon as we find the correct case we break out and finish it
+
+}
