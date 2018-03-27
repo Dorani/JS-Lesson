@@ -11,7 +11,11 @@ function calculateAge(yearOfBirth){
   return age;
 }
 var ageJohn = calculateAge(1990);
+var ageMike = calculateAge(1967);
+var ageMarry = calculateAge(1877);
 console.log(ageJohn);
+console.log(ageMike);
+console.log(ageMarry);
 
 
 //keyword function and name of function, pass in argument = data we want to pass into the functions
@@ -24,3 +28,7 @@ console.log(ageJohn);
 // but this value will not be stored anywhere so:
 
 // we create a variable for it, ageJohn and we call the function with any argument we want for that specific person
+
+//the point here is that we can use many examples with same logic from one function
+//use it over and over again
+//
