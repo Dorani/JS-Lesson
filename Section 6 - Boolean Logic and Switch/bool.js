@@ -21,3 +21,16 @@ if (age < 20){
  //false
  age >= 20 || age < 30;//or operator results when just one is true
  //true
+
+
+ //What if we want to see if john is between 20 and 30 also
+
+ var age = 21;
+
+ if (age < 20){
+   console.log('John is a teen');
+ } else if ( age > 20 && age < 30) {
+   console.log('John is a young man.')
+ } else {
+   console.log('John is an old man');
+ }
