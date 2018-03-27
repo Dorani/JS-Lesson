@@ -27,3 +27,12 @@ if (isMarried){//much faster way, js figures out its false and we go into the el
 } else {
   console.log('no');
 }
+
+//comparison operators:
+
+// == does type coersion
+// === does not
+
+if ( 23 == '23'){
+  console.log("something to print");
+}
