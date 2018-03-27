@@ -15,3 +15,15 @@ if (isMarried === 'yes'){//the condition needs to be evaluated to true so that:
 // isMarried is set to yes?
 // it evaluates to false
 // the else statement is returned.
+
+//this allows us to make decisions with our code using Conditionals
+
+
+
+isMarried = false;
+
+if (isMarried){//much faster way, js figures out its false and we go into the else statement
+  console.log('yes');
+} else {
+  console.log('no');
+}
