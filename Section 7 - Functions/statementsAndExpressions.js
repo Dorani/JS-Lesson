@@ -13,4 +13,4 @@ var someFun = function(stuff){
 }
 
 //the difference is that an expressions produces a value/outcome
-//a statement performs an action
+//a statement performs an action with no imediate outcome/product
