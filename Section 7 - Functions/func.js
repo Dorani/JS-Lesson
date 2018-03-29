@@ -37,7 +37,7 @@ console.log(ageMarry);
   //this is then used in the function body and stored into the age variable
   //which is finaly returned
   //so: calculateAge(1990)=returns the age which is ultimately assigned to a person
-  //this was made to show how we can execute one function for multiple people and store it!
+  //this was made to show how we can execute one function for multiple people and NOT REPEAT OUR CODE!!
 
 //the point here is that we can use many examples with same logic from one function
 //use it over and over again
@@ -49,9 +49,16 @@ console.log(ageMarry);
 
 //------------------------------------------------------------------
 
+//here's an example of creating a new function with 2 arguments passed in
+//insde the body we are using a function from above to calculate the age which is stored
 
-function yearsToRetirement(name, yearOfBirth) {
-    var age = calculateAge(yearOfBirth);
+function yearsToRetirement(name, year) {
+    var age = calculateAge(year);
 }
+//when this function gets called:
+  // the first parameter will get passed in as 1st arg of func
+  // the second parameter gets passed as 2nd argument of function
 
+//now in the body of the functin:
+  //age is a var declared with the above function with 1990 - (second parameter) as the argument.
 yearsToRetirement('john', 1990);
