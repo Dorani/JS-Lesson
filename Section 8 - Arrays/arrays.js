@@ -49,14 +49,9 @@ john.indexOf('smith');
 
 console.log(john);
 
-
-
-
-
-
+//------------------
 
 //say we want to know if john is a teacher or not
-
 //indexOf method, if element is not in array it returns -1
 
 if (john.indexOf('teacher') === -1){
