@@ -24,17 +24,27 @@ console.log(person);
 
 // dot notation
 
-console.log(john.lastName);
+console.log(person.lastName);
 //smith
 //or this way
-console.log(john['lastName']);
+console.log(person['lastName']);
 
 
 //Data mutation:
-john.lastName = 'miller';
-john['job'] = ['software'];
+person.lastName = 'miller';
+person['job'] = ['software'];
 
-console.log(john);
+console.log(person);
 //data mutation works in both ways just like arrays
 
 //---------------------
+//Other way to create obj:
+
+var jane = new Object();
+jane.name = 'jane';
+jane.lastName = 'boon';
+jane.job = 'law';
+jane['yearOfBirth'] = 1969;
+jane['isMarried'] = true;
+
+console.log(jane);
