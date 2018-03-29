@@ -34,3 +34,12 @@ var john = ['john', 'smith', 1990 , 'teacher', false];
 john.push('blue');
 console.log(john);
 //'john', 'smith', 1990 , 'teacher', false, blue
+
+//unshift method adds an element at begining of array
+john.unshift('mr');
+
+//pop method removes last element from the array
+john.pop();
+
+//shift method removes 1st element of the array
+john.shift();
