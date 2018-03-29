@@ -16,7 +16,7 @@ var years = [1999, 1969, 1948];
 //In JS arrays are 0 based:
   //1st element has index number of 0
 
-console.log(name[0]);
+console.log(names[0]);
 //john
 
 //to change/mutatate a value in the array
@@ -27,7 +27,7 @@ console.log(names);
 
 //one array can hold more than one data type:
 
-var john = ['john', 'smith', 1990 , 'teacher', false];
+var john = ['john', 'smith', 1990 , 'designer', false];
 //strings numbers and booleans all in the same array
 
 //push methodadds element at end of array
@@ -46,3 +46,22 @@ john.shift();
 
 //indexOf method returns the position of the elemet we pass in
 john.indexOf('smith');
+
+console.log(john);
+
+
+
+
+
+
+
+//say we want to know if john is a teacher or not
+
+//indexOf method, if element is not in array it returns -1
+
+if (john.indexOf('teacher') === -1){
+  console.log('john is not a teacher')
+}
+//john is not a teacher
+//because it can not find the teacher element in the array
+//returns -1 and outputs message to the consosle
