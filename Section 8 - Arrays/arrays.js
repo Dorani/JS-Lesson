@@ -18,3 +18,19 @@ var years = [1999, 1969, 1948];
 
 console.log(name[0]);
 //john
+
+//to change/mutatate a value in the array
+
+names[1] = 'ben'
+console.log(names);
+//'john', 'ben', 'mark'
+
+//one array can hold more than one data type:
+
+var john = ['john', 'smith', 1990 , 'teacher', false];
+//strings numbers and booleans all in the same array
+
+//push methodadds element at end of array
+john.push('blue');
+console.log(john);
+//'john', 'smith', 1990 , 'teacher', false, blue
