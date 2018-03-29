@@ -54,6 +54,8 @@ console.log(ageMarry);
 
 function yearsToRetirement(name, year) {
     var age = calculateAge(year);
+    var retirement = 65 - age
+    console.log(name + " " + retirement);
 }
 //when this function gets called:
   // the first parameter will get passed in as 1st arg of func
