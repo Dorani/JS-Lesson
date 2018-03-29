@@ -5,6 +5,9 @@
 //we pass arguments in them
 //and then output a result
 
+//We want to be able to calculate the age of a person by knowing
+//the year at which that person is born:
+
 
 function calculateAge(yearOfBirth){
   var age = 2018 - yearOfBirth;
