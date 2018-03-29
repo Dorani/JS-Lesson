@@ -63,11 +63,14 @@ function yearsToRetirement(name, year) {
     }
 }
 //when this function gets called:
-  // the first parameter will get passed in as 1st arg of func
-  // the second parameter gets passed as 2nd argument of function
+  // the first argument will get passed in as 1st parameter of func
+  // the second arguments gets passed as 2nd parameter of function
 
 //now in the body of the functin:
   //age is a var declared with the above function with 1990 - (second parameter) as the argument.
 yearsToRetirement('john', 1990);
 yearsToRetirement('mike', 1967);
 yearsToRetirement('mary', 1948);
+
+//so above examples basically show that functions dont necessarily need to return anything
+//and functions can call other functions.
