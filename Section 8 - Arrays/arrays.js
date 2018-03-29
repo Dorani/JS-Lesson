@@ -43,3 +43,6 @@ john.pop();
 
 //shift method removes 1st element of the array
 john.shift();
+
+//indexOf method returns the position of the elemet we pass in
+john.indexOf('smith');
