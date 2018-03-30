@@ -17,7 +17,7 @@ console.log(ageMike);
 console.log(ageMarry);
 
 
-
+//VERSION 1:
 
 //strings numbers and booleans
 var person = {
@@ -48,3 +48,20 @@ var age = person.calculateAge();
 person.age = age;
 //inject that key-value into the object
 //check the console to see the value that was calculate.
+
+
+
+
+//VERSION 2:
+var person = {
+  name: 'john',
+  lastName: 'smith',
+  yearOfBirth: 1990,
+  job: 'teacher',
+  isMarried: false,
+  family: ['jane', 'mark', 'sammy', 'kenny', 'james'],//array of person john's family
+  calculateAge: function(){//function expression, inside of an object, since we have key value pairs we do not have the assignment opperator(=) but we have :
+      this.age = 2016 - this.yearOfBirth;//this refers to the person obj, create the new property called age, calculate this value and assign it to the age property
+      //return 2018 - this.yearOfBirth;//this refers to the object person with the calculateAge method
+  }
+};
