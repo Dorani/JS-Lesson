@@ -42,3 +42,9 @@ console.log(person.family[2]);//isolate even further for a specific element of t
 
 console.log(person.calculateAge());//no parameters in the function
 //we call the method and didn't pass in any parameters because the value is already in the person object
+
+var age = person.calculateAge();
+//assign a value
+person.age = age;
+//inject that key-value into the object
+//check the console to see the value that was calculate.
