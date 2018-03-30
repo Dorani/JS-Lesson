@@ -1,4 +1,8 @@
 //Objects and methods
+//What else can objects hold?
+  //other objects
+  //Arrays
+  //functions
 
 
 function calculateAge(yearOfBirth){
@@ -19,18 +23,22 @@ console.log(ageMarry);
 var person = {
   name: 'john',
   lastName: 'smith',
-  year: 1990,
+  yearOfBirth: 1990,
   job: 'teacher',
   isMarried: false,
   family: ['jane', 'mark', 'sammy', 'kenny', 'james'],//array of person john's family
-  calculateAge: function(yearOfBirth){//function expression, inside of an object, since we have key value pairs we do not have the assignment opperator(=) but we have :
-      return 2018 -  yearOfBirth;
+  calculateAge: function(){//function expression, inside of an object, since we have key value pairs we do not have the assignment opperator(=) but we have :
+      return 2018 - this.yearOfBirth;//this refers to the object person with the calculateAge method
   }
 };
 console.log(person);//log the entire array
 console.log(person.family);//.notation to isolate the array
 console.log(person.family[2]);//isolate even further for a specific element of the array in the person object
-//What else can objects hold?
-  //other objects
-  //Arrays
-  //functions
+
+//lets call the functions
+//console.log(person.calculateAge(1990));
+//objects can contain functions, and these functions are called methods:
+//associated to arrays
+
+console.log(person.calculateAge());//no parameters in the function
+//we call the method and didn't pass in any parameters because the value is already in the person object
