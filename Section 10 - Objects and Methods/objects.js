@@ -27,7 +27,9 @@ var person = {
       return 2018 -  yearOfBirth;
   }
 };
-console.log(person);
+console.log(person);//log the entire array
+console.log(person.family);//.notation to isolate the array
+console.log(person.family[2]);//isolate even further for a specific element of the array in the person object
 //What else can objects hold?
   //other objects
   //Arrays
