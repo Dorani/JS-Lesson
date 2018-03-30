@@ -65,3 +65,6 @@ var person = {
       //return 2018 - this.yearOfBirth;//this refers to the object person with the calculateAge method
   }
 };
+
+person.calculateAge();
+console.log(person);
