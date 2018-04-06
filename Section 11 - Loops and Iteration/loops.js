@@ -26,8 +26,18 @@ for (var i = 0; i < 10; i++){
 
 //Now, let iterate through a data type, like an array:
 
-var names = ['seif','bane', 'same', 'jeff'];//arrays have properties
+var names = ['seif','bane', 'same', 'jeff','bob'];//arrays have properties
 
 for ( var i = 0; i < names.length; i++){//length property, gives us the number of elements in the array
   console.log(names[i]);
 }
+
+
+//build a loop with the reverse order
+//start counter variable at the 4th element
+//ending condition will update the counter, in this case we will decrease it.
+for (var i = names.length - 1; i >= 0; i--){
+  console.log(names[i]);
+}
+//we start at number 4 and go all the way to 0 because the
+//condition is that i should be greater or equal to 0
