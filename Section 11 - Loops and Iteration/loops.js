@@ -22,3 +22,12 @@ for (var i = 0; i < 10; i++){
 }
 
 //as soon as condition is false, loop stops and no values are printed
+
+
+//Now, let iterate through a data type, like an array:
+
+var names = ['seif','bane', 'same', 'jeff'];//arrays have properties
+
+for ( var i = 0; i < names.length; i++){//length property, gives us the number of elements in the array
+  console.log(names[i]);
+}
