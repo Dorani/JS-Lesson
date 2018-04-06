@@ -1,5 +1,8 @@
 //while Loops
 
+
+
+//---------------------EXAMPLE1------------//
 var names = ['seif','bane', 'same', 'jeff','bob'];//arrays have properties
 
 //print these out
@@ -8,12 +11,12 @@ while (i < names.length){//while loops only has the contidion that is evaluated 
   console.log(name[i]);
   i++;//update counter
 }
-
-
 //statements for Loops
   //break: to finish a loop at a certain point
   //continue: quit curent iteration and continue with next one
 
+
+//--------------------BREAK - CONITNUE STATEMENTS-------------//
 for ( var i = 1; i <= 5; i++){
   console.log(i);
 
@@ -33,6 +36,17 @@ for ( var i = 1; i <= 5; i++){
 }
 
 
+//------------EXAMPLE 2---------------------//
+//create animals array
+var animals = ["Lion", "Zebra", "Panda","monkey"];
+//itterate through array
+for( var i = 0; i < animals.length; i++){
+  //print each element of the array
+  console.log(animals[i]);
+}//outputs each element of array
+
+
+//-------EXAMPLE 3---------------//
 var friends = ["seif", "anas", "dounya"]
 var newFriends = "emma";
 
