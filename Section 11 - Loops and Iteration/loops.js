@@ -20,3 +20,5 @@
 for (var i = 0; i < 10; i++){
   console.log(i);
 }
+
+//as soon as condition is false, loop stops and no values are printed
