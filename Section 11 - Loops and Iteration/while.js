@@ -23,3 +23,11 @@ for ( var i = 1; i <= 5; i++){
 }
 
 //want to stop this loop up to 3
+
+
+for ( var i = 1; i <= 5; i++){
+  if ( i === 3){
+    continue;//goes to next iteration, 4 and 5 will be printed
+  }
+  console.log(i);
+}
