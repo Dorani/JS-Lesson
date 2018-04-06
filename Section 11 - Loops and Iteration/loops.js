@@ -17,4 +17,6 @@
 
 //3. Updated to the counter
 //we simply increase i by 1
-for (var i = 0; i < 10; i++)
+for (var i = 0; i < 10; i++){
+  console.log(i);
+}
