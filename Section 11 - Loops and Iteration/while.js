@@ -31,3 +31,20 @@ for ( var i = 1; i <= 5; i++){
   }
   console.log(i);
 }
+
+
+var friends = ["seif", "anas", "dounya"]
+var newFriends = "emma";
+
+friends.push(newFriends);
+
+//setting new element to the push function
+//append new element to end of array
+
+var exFriend = friends.pop();
+
+//remove element from array, removes last element of array before returning it.
+//if you pop an empty array = undefined
+
+friends.indexOf("seif");
+//to isolate indexOf
