@@ -43,9 +43,9 @@
       - a new execution context is put on top of the execution stack.
       - this happens in 2 stages:
           - Creation phase:
-              - Creation of the variable object
-                   The argument object is created, containing all the arguments that were passed into the function.
-                   The code is scanned for function declarations, for each function, a property is created in the variable object, pointing to the function.
+            - Creation of the variable object
+                - The argument object is created, containing all the arguments that were passed into the function.
+                - The code is scanned for function declarations, for each function, a property is created in the variable object, pointing to the function.
               - Creation of the scope chain
               - Determine value of the 'this' variable
 
