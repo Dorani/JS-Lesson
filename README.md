@@ -23,3 +23,29 @@
           - This is then translated into machine code (set of instructions that can be executed directly by computer processor)
 
           - Only when it is converted, it runs and does the work.
+
+
+# Execution Context:
+
+  - A container that stores variables, and in which a piece of our code is evaluated and executed
+
+  - The default context is the global context:
+      - code that is not inside any function
+      - associated with global object
+      - in the browser, thats the window object
+  - So this means the global execution context is associated with the global object ( which is the window object ) in the browser.
+  - They get stacked as our code gets executed
+
+
+# How is the Execution Context created?
+
+  - When a function is called:
+      - a new execution context is put on top of the execution stack.
+      - this happens in 2 stages:
+          - Creation phase:
+              - Creation of the variable object
+              - Creation of the scope chain
+              - Determine value of the 'this' variable
+
+          - Execution phase:
+              - The code of the function that generated the current execution context is ran line by line
