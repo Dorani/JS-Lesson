@@ -33,3 +33,6 @@ retirement(1990);
 console.log(age);
 var age = 23;
 console.log(age);
+    // In the creation phase, of the variable object, the code is scanned for variable
+    // declaration and then the variables are then set to undefined
+    // JS knows there will be an age variable, but we sinply dont know the value yet
