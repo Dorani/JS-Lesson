@@ -36,3 +36,21 @@ console.log(age);
     // In the creation phase, of the variable object, the code is scanned for variable
     // declaration and then the variables are then set to undefined
     // JS knows there will be an age variable, but we sinply dont know the value yet
+
+function foo() {
+  var age = 65;
+  console.log(age);
+}
+
+foo();
+console.log(age);
+
+//What happens in the above example?
+
+//line 42 result is 65
+//line 46 result is 23
+
+//Age variable on line 34 gets stored in the global execution context object
+// The foo function gets its own execution context object in which we can also stores
+// an age variable and it can be the same name cause it doesnt matter they are different varibales
+//defined in different variable objects, which is why resuts are different
