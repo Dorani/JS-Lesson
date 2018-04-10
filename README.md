@@ -58,6 +58,6 @@
 
   - HOSTING:
 
-  - Code is scanned for function declarations: for each function, a property is created in the variable object, pointing to the function.
+      - Code is scanned for function declarations: for each function, a property is created in the variable object, pointing to the function.
 
-  - The code is scanned for var declarations: for each var, a property is created in the variable object, and set to undefined
+      - The code is scanned for var declarations: for each var, a property is created in the variable object, and set to undefined
