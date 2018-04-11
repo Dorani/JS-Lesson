@@ -8,3 +8,4 @@
 //In order to create a new scope, a new function needs to be declared
 
 //Lexical scoping:
+//A function that is lexically within another functipn gets access to the scope of the outer function
