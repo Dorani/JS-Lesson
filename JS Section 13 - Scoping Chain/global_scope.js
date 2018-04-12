@@ -13,3 +13,5 @@ function first() {
 
 //first scope and second scope are local scopes, the second has acceess to the first and the global
 //a scope has access to the scope to the function in which it sits lexically
+//scope chain: all the variable objects that an execution context has access to
+//this is lexcial scoping
