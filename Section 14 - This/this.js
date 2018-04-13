@@ -18,5 +18,16 @@ function calculateAge(year){
   console.log(this);//once again it is the window object, why? because this is a regular function call which points to the window object
 }
 //this function is attached to the global object
-
+//when it is a function declaration
 //------------------------------------//
+
+//Method, function expression:
+
+var  john = {
+  name: 'john',
+  yearOfBirth: 1990;
+  calculateAge: function(year){
+      console.log(this);//this will refer to the john object
+  }
+}
+john.calculateAge(;)
