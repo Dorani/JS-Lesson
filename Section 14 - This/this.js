@@ -29,6 +29,11 @@ var  john = {
   calculateAge: function(year){
       console.log(this);//this will refer to the john object that calls the method
       console.log(2016 - this.yearOfBirth);
+
+      function innerFunction(){
+          console.log(this);//back to being the window object - when a regular function call happens, the default object is the window object, even if it is writen inside a method
+      }
+      innerFunction();
   }
 }
 john.calculateAge();
