@@ -20,3 +20,8 @@ GAME RULES:
 var scores = [0,0]//setting both players scores to 0
 var roundScore = 0;//round score
 var activePlayer = 0;//0 will be the first player, 1 will be the second
+
+
+var dice = Math.floor(Math.random() * 6) + 1;//generate a random number between 1 and 6, remove decimals by using the floor method
+
+console.log(dice);
