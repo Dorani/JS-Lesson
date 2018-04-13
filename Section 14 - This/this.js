@@ -30,10 +30,24 @@ var  john = {
       console.log(this);//this will refer to the john object that calls the method
       console.log(2016 - this.yearOfBirth);
 
-      function innerFunction(){
-          console.log(this);//back to being the window object - when a regular function call happens, the default object is the window object, even if it is writen inside a method
-      }
-      innerFunction();
+      // function innerFunction(){
+      //     console.log(this);//back to being the window object - when a regular function call happens, the default object is the window object, even if it is writen inside a method
+      // }
+      // innerFunction();
   }
 }
 john.calculateAge();
+
+
+//-----------------------------------//
+//Another example: method borrowing
+
+var mike = {
+  name: 'mike',
+  yearOfBirth: 1984
+};
+
+mike.calculateAge = john.calculateAge;//borrowing the function on the mike object from johns method
+mike.calculateAge();//calling the FUNCTION
+
+//the this variable is only assigned a value when the object calls a method
