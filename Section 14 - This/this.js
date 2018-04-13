@@ -25,9 +25,10 @@ function calculateAge(year){
 
 var  john = {
   name: 'john',
-  yearOfBirth: 1990;
+  yearOfBirth: 1990,
   calculateAge: function(year){
-      console.log(this);//this will refer to the john object
+      console.log(this);//this will refer to the john object that calls the method
+      console.log(2016 - this.yearOfBirth);
   }
 }
-john.calculateAge(;)
+john.calculateAge();
