@@ -10,25 +10,34 @@ GAME RULES:
 */
 
 //Part 1:
-//How to create our fundamental game variables
-//How to generate a random number
-//How to manipulate the Dom
-//How to read from the Dom
-//How to change css styles
-//---------------------------------------------//
+//1.How to create our fundamental game variables
+//2.How to generate a random number
+//3.How to manipulate the Dom
+//4.How to read from the Dom
+//5.How to change css styles
 
-//How to create our fundamental game variables
+
+
+//---------1.How to create our fundamental game variables-----------------//
+
 var scores = [0,0]//setting both players scores to 0
 var roundScore = 0;//round score
 var activePlayer = 0;//0 will be the first player, 1 will be the second
 
-//How to generate a random number
+//-----------2.How to generate a random number--------------//
+
 var dice = Math.floor(Math.random() * 6) + 1;//generate a random number between 1 and 6, remove decimals by using the floor method
 console.log(dice);
+//--------3.How to manipulate the Dom------------------//
 
-//How to manipulate the Dom
 document.querySelector('#current-' + activePlayer).textContent = dice;//selects stuff exactly the way we do in css, we selected the score-0 element
 //when we change the active player, the score will be printed in the other label
 
 //Another way: putting html in the selected element, we use the inner html method instead of textContent
 document.querySelector('#current-' + activePlayer).innerHTML = '<em>' + dice + '</em>';//writing the html needs to be a string, so the parser understands its html code
+//makes italic text
+
+//--------------4.How to read from the Dom-----------------//
+
+var x = document.querySelector('#score-0').textContent;//read the content of the element with the id score 0 and store it into variable x
+console.log(x);
