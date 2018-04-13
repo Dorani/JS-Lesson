@@ -8,3 +8,15 @@ GAME RULES:
 - The first player to reach 100 points on GLOBAL score wins the game
 
 */
+
+//Part 1:
+//How to create our fundamental game variables
+//How to generate a random number
+//How to manipulate the Dom
+//How to read from the Dom
+//How to change css styles
+
+
+var scores = [0,0]//setting both players scores to 0
+var roundScore = 0;//round score
+var activePlayer = 0;//0 will be the first player, 1 will be the second
