@@ -91,28 +91,47 @@ document.querySelector('.btn-roll').addEventListener('click', function(){
     document.querySelector('#current-' + activePlayer).textContent = roundScore;//selects stuff exactly the way we do in css, we selected the score-0 element
     //each time after player rolls dice we want to updated roundscore and display it
   } else {
-    //next player
-    //ternary operator:
-    activePlayer === 0 ? activePlayer = 1 : activePlayer = 0;//cleaner way
-    roundScore = 0;//when once players rolls a 1, then other player becomes active player and roundscore is reset to 0
-
-    document.getElementById('current-0').textContent = '0';
-    document.getElementById('current-0').textContent = '1';
-
-    document.querySelector('.player-0-panel').classList.toggle('active');//toggle class is better for these situations, no need for condition
-    document.querySelector('.player-1-panel').classList.toggle('active');
-    // document.querySelector('.player-0-panel').classList.remove('active');//active class gets removed
-    // document.querySelector('.player-1-panel').classList.add('active');//gets added to player 2 when player 1 rolls a 1
-
-    document.querySelector('.dice').style.display ='none';//die is removed when a 1 is rolled, then we can roll again
+    nextPlayer();
   }
 });
+
+document.querySelector('.btn-hold').addEventListener('click', function(){//as soon as user clicks hold button
+    //add current score to global score
+      scores[activePlayer] += roundScore;//score player has + score received in the round
+    //update the UI
+      document.querySelector('#score-' + activePlayer).textContent = scores[activePlayer];
+    //check if player won the game
+      nextPlayer();
+});
+
+//-----------------------------------------------
+//above
+                            //Part 3
+
+//1.What the ternary operator is
+//2.How to add, remove, and toggle html classes
 
 
 
 //-----------------------------------------------
 
-                            //Part 3
+                      //Part 4
 
-//1.What the ternary operator is
-//2.How to add, remove, and toggle html classes
+//1.How to use function to correctly apply the DRY principle
+function nextPlayer(){
+  //next player
+  //ternary operator:
+  activePlayer === 0 ? activePlayer = 1 : activePlayer = 0;//cleaner way
+  roundScore = 0;//when once players rolls a 1, then other player becomes active player and roundscore is reset to 0
+
+  document.getElementById('current-0').textContent = '0';
+  document.getElementById('current-0').textContent = '1';
+
+  document.querySelector('.player-0-panel').classList.toggle('active');//toggle class is better for these situations, no need for condition
+  document.querySelector('.player-1-panel').classList.toggle('active');
+  // document.querySelector('.player-0-panel').classList.remove('active');//active class gets removed
+  // document.querySelector('.player-1-panel').classList.add('active');//gets added to player 2 when player 1 rolls a 1
+
+  document.querySelector('.dice').style.display ='none';//die is removed when a 1 is rolled, then we can roll again
+}
+//2.How to think about the game logic like a programer
