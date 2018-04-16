@@ -103,6 +103,8 @@ document.querySelector('.btn-roll').addEventListener('click', function(){
     document.querySelector('.player-1-panel').classList.toggle('active');
     // document.querySelector('.player-0-panel').classList.remove('active');//active class gets removed
     // document.querySelector('.player-1-panel').classList.add('active');//gets added to player 2 when player 1 rolls a 1
+
+    document.querySelector('.dice').style.display ='none';//die is removed when a 1 is rolled, then we can roll again
   }
 });
 
