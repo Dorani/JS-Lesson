@@ -62,36 +62,39 @@ init();
 
 //4.Another way to select elements by ID
 
-document.getElementById('score-0').textContent = '0';
-document.getElementById('score-1').textContent = '0';
-document.getElementById('current-0').textContent = '0';
-document.getElementById('current-1').textContent = '0';
+// document.getElementById('score-0').textContent = '0';
+// document.getElementById('score-1').textContent = '0';
+// document.getElementById('current-0').textContent = '0';
+// document.getElementById('current-1').textContent = '0';
 
 //1.2callback function style: external function called by event lsner
   //document.querySelector('.btn-roll').addEventListener('click', btn);
 
 //3.annomous function: no named, can be reused
 document.querySelector('.btn-roll').addEventListener('click', function(){
-  //1.random number
-  var dice = Math.floor(Math.random() * 6) + 1;
-  //2.display result
-  var diceDOM = document.querySelector('.dice');
-  diceDOM.style.display = 'block';
-  diceDOM.src = 'dice-' + dice + '.png';
-  //3.update round score, if the rolled number was not a 1
-  if (dice !== 1){//does not do type coersion, this means different than 1.
-    //add score
-    roundScore += dice;
-    //roundScore = roundScore + dice
-    //display in UI
-    document.querySelector('#current-' + activePlayer).textContent = roundScore;//selects stuff exactly the way we do in css, we selected the score-0 element
-    //each time after player rolls dice we want to updated roundscore and display it
-  } else {
-    nextPlayer();
+  if (gamePlaying) {
+    //1.random number
+    var dice = Math.floor(Math.random() * 6) + 1;
+    //2.display result
+    var diceDOM = document.querySelector('.dice');
+    diceDOM.style.display = 'block';
+    diceDOM.src = 'dice-' + dice + '.png';
+    //3.update round score, if the rolled number was not a 1
+    if (dice !== 1){//does not do type coersion, this means different than 1.
+      //add score
+      roundScore += dice;
+      //roundScore = roundScore + dice
+      //display in UI
+      document.querySelector('#current-' + activePlayer).textContent = roundScore;//selects stuff exactly the way we do in css, we selected the score-0 element
+      //each time after player rolls dice we want to updated roundscore and display it
+    } else {
+      nextPlayer();
+    }
   }
 });
 
 document.querySelector('.btn-hold').addEventListener('click', function(){//as soon as user clicks hold button
+  if (gamePlaying) {
     //add current score to global score
       scores[activePlayer] += roundScore;//score player has + score received in the round
     //update the UI
@@ -102,11 +105,12 @@ document.querySelector('.btn-hold').addEventListener('click', function(){//as so
         document.querySelector('.dice').style.display = 'none';//die will not be visitble anymore
         document.querySelector('.player-' + activePlayer + '-panel').classList.add('winner');
         document.querySelector('.player-' + activePlayer + '-panel').classList.remove('active');
+        gamePlaying = false;//state variable turns into false
       } else {
         //next player to play
         nextPlayer();
       }
-    //changeplayer
+  }
 });
 
 //-----------------------------------------------
@@ -130,7 +134,7 @@ function nextPlayer(){
   roundScore = 0;//when once players rolls a 1, then other player becomes active player and roundscore is reset to 0
 
   document.getElementById('current-0').textContent = '0';
-  document.getElementById('current-0').textContent = '1';
+  document.getElementById('current-1').textContent = '1';
 
   document.querySelector('.player-0-panel').classList.toggle('active');//toggle class is better for these situations, no need for condition
   document.querySelector('.player-1-panel').classList.toggle('active');
@@ -152,7 +156,6 @@ function init(){
   scores = [0,0];
   activePlayer = 0;
   roundScore = 0 ;
-
   gamePlaying = true;
 
   //removing dice img
@@ -165,11 +168,11 @@ function init(){
   document.getElementById('current-1').textContent = '0';
   document.getElementById('name-0').textContent = 'Player 1';
   document.getElementById('name-1').textContent = 'Player 2';
-  document.querySelector('.player-0-panel' + activePlayer + '-panel').classList.remove('winner');
-  document.querySelector('.player-1-panel' + activePlayer + '-panel').classList.remove('winner');
-  document.querySelector('.player-0-panel' + activePlayer + '-panel').classList.remove('active');
-  document.querySelector('.player-1-panel' + activePlayer + '-panel').classList.remove('active');
-  document.querySelector('.player-0-panel' + activePlayer + '-panel').classList.add('active');
+  document.querySelector('.player-0-panel').classList.remove('winner');
+  document.querySelector('.player-1-panel').classList.remove('winner');
+  document.querySelector('.player-0-panel').classList.remove('active');
+  document.querySelector('.player-1-panel').classList.remove('active');
+  document.querySelector('.player-0-panel').classList.add('active');
   //no active class is anywhere, then we add active class back to the 1st one
 }
 
