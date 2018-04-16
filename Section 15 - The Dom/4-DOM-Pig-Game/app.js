@@ -64,6 +64,13 @@ activePlayer = 0;//0 will be the first player, 1 will be the second
 // }
 // btn();
 
+//4.Another way to select elements by ID
+
+document.getElementById('score-0').textContent = '0';
+document.getElementById('score-1').textContent = '0';
+document.getElementById('current-0').textContent = '0';
+document.getElementById('current-1').textContent = '0';
+
 //1.2callback function style: external function called by event lsner
 //document.querySelector('.btn-roll').addEventListener('click', btn);
 
