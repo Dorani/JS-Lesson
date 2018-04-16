@@ -72,7 +72,7 @@ document.getElementById('current-0').textContent = '0';
 document.getElementById('current-1').textContent = '0';
 
 //1.2callback function style: external function called by event lsner
-//document.querySelector('.btn-roll').addEventListener('click', btn);
+  //document.querySelector('.btn-roll').addEventListener('click', btn);
 
 //3.annomous function: no named, can be reused
 document.querySelector('.btn-roll').addEventListener('click', function(){
@@ -83,5 +83,18 @@ document.querySelector('.btn-roll').addEventListener('click', function(){
   diceDOM.style.display = 'block';
   diceDOM.src = 'dice-' + dice + '.png';
   //3.update round score, if the rolled number was not a 1
-
+  if (dice > 1){
+    //add score
+  } else {
+    //next player
+  }
 });
+
+
+
+//-----------------------------------------------
+
+                            //Part 3
+
+//1.What the ternary operator is
+//2.How to add, remove, and toggle html classes
