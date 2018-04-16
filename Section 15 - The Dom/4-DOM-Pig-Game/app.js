@@ -18,31 +18,31 @@ GAME RULES:
 //5.How to change css styles
 
 //---------1.How to create our fundamental game variables-----------------//
+var scores, roundScore, activePlayer;
 
-var scores = [0,0]//setting both players scores to 0
-var roundScore = 0;//round score
-var activePlayer = 0;//0 will be the first player, 1 will be the second
+scores = [0,0]//setting both players scores to 0
+roundScore = 0;//round score
+activePlayer = 0;//0 will be the first player, 1 will be the second
 
 //-----------2.How to generate a random number--------------//
 
 //var dice = Math.floor(Math.random() * 6) + 1;//generate a random number between 1 and 6, remove decimals by using the floor method
-console.log(dice);
+// console.log(dice);
 //--------3.How to manipulate the Dom------------------//
 
-document.querySelector('#current-' + activePlayer).textContent = dice;//selects stuff exactly the way we do in css, we selected the score-0 element
+// document.querySelector('#current-' + activePlayer).textContent = dice;//selects stuff exactly the way we do in css, we selected the score-0 element
 //when we change the active player, the score will be printed in the other label
 
 //Another way: putting html in the selected element, we use the inner html method instead of textContent
-document.querySelector('#current-' + activePlayer).innerHTML = '<em>' + dice + '</em>';//writing the html needs to be a string, so the parser understands its html code,makes italic text
+// document.querySelector('#current-' + activePlayer).innerHTML = '<em>' + dice + '</em>';//writing the html needs to be a string, so the parser understands its html code,makes italic text
 
 //--------------4.How to read from the Dom-----------------//
 
-var x = document.querySelector('#score-0').textContent;//read the content of the element with the id score 0 and store it into variable x
-console.log(x);
+// var x = document.querySelector('#score-0').textContent;//read the content of the element with the id score 0 and store it into variable x
+// console.log(x);
 
 //--------------5.How to change css styles-----------------//
-
-document.querySelector('.dice').style.display = 'none';
+ document.querySelector('.dice').style.display = 'none';
 //removing dice img
 //1st style method, then css property then attribute a value in quotes to the property
 
@@ -59,20 +59,22 @@ document.querySelector('.dice').style.display = 'none';
 
 //-----------1.How to set up an event handler------------//
 
-function btn(){
-  //do something
-}
-btn();
+// function btn(){
+//   //do something
+// }
+// btn();
 
 //1.2callback function style: external function called by event lsner
-document.querySelector('.btn-roll').addEventListener('click', btn);
+//document.querySelector('.btn-roll').addEventListener('click', btn);
 
 //3.annomous function: no named, can be reused
 document.querySelector('.btn-roll').addEventListener('click', function(){
   //1.random number
   var dice = Math.floor(Math.random() * 6) + 1;
   //2.display result
-
+  var diceDOM = document.querySelector('.dice');
+  diceDOM.style.display = 'block';
+  diceDOM.src = 'dice-' + dice + '.png';
   //3.update round score, if the rolled number was not a 1
 
 });
