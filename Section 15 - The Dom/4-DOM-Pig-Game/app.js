@@ -40,9 +40,7 @@ init();
 // console.log(x);
 
 //--------------5.How to change css styles-----------------//
- document.querySelector('.dice').style.display = 'none';
-//removing dice img
-//1st style method, then css property then attribute a value in quotes to the property
+
 
 
                         //PART 2:
@@ -154,4 +152,13 @@ function init(){
   scores = [0,0];
   activePlayer = 0;
   roundScore = 0 ;
+  
+  //removing dice img
+  //1st style method, then css property then attribute a value in quotes to the property
+  document.querySelector('.dice').style.display = 'none';
+  //4.Another way to select elements by ID
+  document.getElementById('score-0').textContent = '0';
+  document.getElementById('score-1').textContent = '0';
+  document.getElementById('current-0').textContent = '0';
+  document.getElementById('current-1').textContent = '0';
 }
