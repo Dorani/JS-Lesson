@@ -83,10 +83,22 @@ document.querySelector('.btn-roll').addEventListener('click', function(){
   diceDOM.style.display = 'block';
   diceDOM.src = 'dice-' + dice + '.png';
   //3.update round score, if the rolled number was not a 1
-  if (dice > 1){
+  if (dice !== 1){//does not do type coersion, this means different than 1.
     //add score
+    roundScore += dice;
+    //roundScore = roundScore + dice
+    //display in UI
+    document.querySelector('#current-' + activePlayer).textContent = roundScore;//selects stuff exactly the way we do in css, we selected the score-0 element
+    //each time after player rolls dice we want to updated roundscore and display it
   } else {
     //next player
+    //ternary operator:
+    activePlayer === 0 ? activePlayer = 1 : activePlayer = 0;//cleaner way
+    //if (activePlayer === 0 ){
+          //activePlayer =1;
+  //} else {
+    //activePlayer = 0;
+//}
   }
 });
 
