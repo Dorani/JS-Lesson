@@ -16,8 +16,6 @@ GAME RULES:
 //4.How to read from the Dom
 //5.How to change css styles
 
-
-
 //---------1.How to create our fundamental game variables-----------------//
 
 var scores = [0,0]//setting both players scores to 0
@@ -34,10 +32,27 @@ document.querySelector('#current-' + activePlayer).textContent = dice;//selects 
 //when we change the active player, the score will be printed in the other label
 
 //Another way: putting html in the selected element, we use the inner html method instead of textContent
-document.querySelector('#current-' + activePlayer).innerHTML = '<em>' + dice + '</em>';//writing the html needs to be a string, so the parser understands its html code
-//makes italic text
+document.querySelector('#current-' + activePlayer).innerHTML = '<em>' + dice + '</em>';//writing the html needs to be a string, so the parser understands its html code,makes italic text
 
 //--------------4.How to read from the Dom-----------------//
 
 var x = document.querySelector('#score-0').textContent;//read the content of the element with the id score 0 and store it into variable x
 console.log(x);
+
+//--------------5.How to change css styles-----------------//
+
+document.querySelector('.dice').style.display = 'none';
+//removing dice img
+//1st style method, then css property then attribute a value in quotes to the property
+
+
+//PART 2:
+//1.How to set up an event handler
+//2.What a callback function is
+//3.What an annomous function is
+//4.Another way to select elements by ID
+//5.How to change the image in an img element
+
+
+
+//-----------1.How to set up an event handler------------//
