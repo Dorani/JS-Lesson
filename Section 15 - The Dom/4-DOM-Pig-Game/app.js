@@ -9,7 +9,8 @@ GAME RULES:
 
 */
 
-//Part 1:
+                          //Part 1:
+
 //1.How to create our fundamental game variables
 //2.How to generate a random number
 //3.How to manipulate the Dom
@@ -46,7 +47,8 @@ document.querySelector('.dice').style.display = 'none';
 //1st style method, then css property then attribute a value in quotes to the property
 
 
-//PART 2:
+                        //PART 2:
+
 //1.How to set up an event handler
 //2.What a callback function is
 //3.What an annomous function is
@@ -56,3 +58,16 @@ document.querySelector('.dice').style.display = 'none';
 
 
 //-----------1.How to set up an event handler------------//
+
+function btn(){
+  //do something
+}
+btn();
+
+//1.2callback function style: external function called by event lsner
+document.querySelector('.btn-roll').addEventListener('click', btn);
+
+//3.annomous function: no named, can be reused
+document.querySelector('.btn-roll').addEventListener('click', function(){
+  //do something
+});
