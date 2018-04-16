@@ -144,15 +144,15 @@ function nextPlayer(){
 
 //------------------------------------
 
-document.querySelector('btn-new')addEventListener('click', function(){//when we start a new game
+document.querySelector('btn-new')addEventListener('click', unit);//when someone clicks this button call the init function
 
-});
+
 
 function init(){
   scores = [0,0];
   activePlayer = 0;
   roundScore = 0 ;
-  
+
   //removing dice img
   //1st style method, then css property then attribute a value in quotes to the property
   document.querySelector('.dice').style.display = 'none';
