@@ -25,7 +25,7 @@ var activePlayer = 0;//0 will be the first player, 1 will be the second
 
 //-----------2.How to generate a random number--------------//
 
-var dice = Math.floor(Math.random() * 6) + 1;//generate a random number between 1 and 6, remove decimals by using the floor method
+//var dice = Math.floor(Math.random() * 6) + 1;//generate a random number between 1 and 6, remove decimals by using the floor method
 console.log(dice);
 //--------3.How to manipulate the Dom------------------//
 
@@ -69,5 +69,10 @@ document.querySelector('.btn-roll').addEventListener('click', btn);
 
 //3.annomous function: no named, can be reused
 document.querySelector('.btn-roll').addEventListener('click', function(){
-  //do something
+  //1.random number
+  var dice = Math.floor(Math.random() * 6) + 1;
+  //2.display result
+
+  //3.update round score, if the rolled number was not a 1
+
 });
