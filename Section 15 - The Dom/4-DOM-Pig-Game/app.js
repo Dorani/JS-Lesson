@@ -20,9 +20,7 @@ GAME RULES:
 //---------1.How to create our fundamental game variables-----------------//
 var scores, roundScore, activePlayer;
 
-scores = [0,0]//setting both players scores to 0
-roundScore = 0;//round score
-activePlayer = 0;//0 will be the first player, 1 will be the second
+init();
 
 //-----------2.How to generate a random number--------------//
 
@@ -149,7 +147,11 @@ function nextPlayer(){
 //------------------------------------
 
 document.querySelector('btn-new')addEventListener('click', function(){//when we start a new game
+
+});
+
+function init(){
   scores = [0,0];
   activePlayer = 0;
   roundScore = 0 ;
-});
+}
