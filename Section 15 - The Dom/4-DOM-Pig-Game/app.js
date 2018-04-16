@@ -94,11 +94,7 @@ document.querySelector('.btn-roll').addEventListener('click', function(){
     //next player
     //ternary operator:
     activePlayer === 0 ? activePlayer = 1 : activePlayer = 0;//cleaner way
-    //if (activePlayer === 0 ){
-          //activePlayer =1;
-  //} else {
-    //activePlayer = 0;
-//}
+    roundScore = 0;//when once players rolls a 1, then other player becomes active player and roundscore is reset to 0
   }
 });
 
