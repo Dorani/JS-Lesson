@@ -99,8 +99,10 @@ document.querySelector('.btn-roll').addEventListener('click', function(){
     document.getElementById('current-0').textContent = '0';
     document.getElementById('current-0').textContent = '1';
 
-    document.querySelector('.player-0-panel').classList.remove('active');//active class gets removed
-    document.querySelector('.player-1-panel').classList.add('active');//gets added to player 2 when player 1 rolls a 1
+    document.querySelector('.player-0-panel').classList.toggle('active');//toggle class is better for these situations, no need for condition
+    document.querySelector('.player-1-panel').classList.toggle('active');
+    // document.querySelector('.player-0-panel').classList.remove('active');//active class gets removed
+    // document.querySelector('.player-1-panel').classList.add('active');//gets added to player 2 when player 1 rolls a 1
   }
 });
 
