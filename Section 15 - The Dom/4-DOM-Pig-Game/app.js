@@ -18,7 +18,7 @@ GAME RULES:
 //5.How to change css styles
 
 //---------1.How to create our fundamental game variables-----------------//
-var scores, roundScore, activePlayer;
+var scores, roundScore, activePlayer, gamePlaying;
 
 init();
 
@@ -153,6 +153,8 @@ function init(){
   activePlayer = 0;
   roundScore = 0 ;
 
+  gamePlaying = true;
+
   //removing dice img
   //1st style method, then css property then attribute a value in quotes to the property
   document.querySelector('.dice').style.display = 'none';
@@ -169,9 +171,13 @@ function init(){
   document.querySelector('.player-1-panel' + activePlayer + '-panel').classList.remove('active');
   document.querySelector('.player-0-panel' + activePlayer + '-panel').classList.add('active');
   //no active class is anywhere, then we add active class back to the 1st one
-
-
-
-
-
 }
+
+
+
+//LAST PART------STATE VARIABLE, HOW TO USE IT AND WHY:
+
+//Tells us the condition of a system
+//when we want to rememeber the state of something:
+    //is our game playing or not playing
+    //we can then use that in our function
