@@ -144,3 +144,12 @@ function nextPlayer(){
   document.querySelector('.dice').style.display ='none';//die is removed when a 1 is rolled, then we can roll again
 }
 //2.How to think about the game logic like a programer
+
+
+//------------------------------------
+
+document.querySelector('btn-new')addEventListener('click', function(){//when we start a new game
+  scores = [0,0];
+  activePlayer = 0;
+  roundScore = 0 ;
+});
