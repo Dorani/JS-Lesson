@@ -163,4 +163,15 @@ function init(){
   document.getElementById('current-1').textContent = '0';
   document.getElementById('name-0').textContent = 'Player 1';
   document.getElementById('name-1').textContent = 'Player 2';
+  document.querySelector('.player-0-panel' + activePlayer + '-panel').classList.remove('winner');
+  document.querySelector('.player-1-panel' + activePlayer + '-panel').classList.remove('winner');
+  document.querySelector('.player-0-panel' + activePlayer + '-panel').classList.remove('active');
+  document.querySelector('.player-1-panel' + activePlayer + '-panel').classList.remove('active');
+  document.querySelector('.player-0-panel' + activePlayer + '-panel').classList.add('active');
+  //no active class is anywhere, then we add active class back to the 1st one
+
+
+
+
+
 }
