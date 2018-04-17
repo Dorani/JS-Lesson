@@ -11,11 +11,18 @@ var Person = function(name, yearOfBirth, job){
   this.job = job;
 }
 
-//Prototype:
+//adding a method to the function constructor prototype property:
 
 Person.prototype.calculateAge = function(){//simply a property and then we add our function
   console.log(2018 - this.yearOfBirth);
 }
+
+//Adding a property to a prototype:
+
+Person.prototype.lastName = 'smith';
+console.log(john.lastName)
+console.log(jane.lastName)
+console.log(mark.lastName)
 
 //instances of the person object
 //intantiation:
