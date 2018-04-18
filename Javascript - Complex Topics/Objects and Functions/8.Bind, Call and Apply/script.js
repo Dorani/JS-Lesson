@@ -39,3 +39,8 @@ john.presentation.apply(emily, ['friendly', 'afternoon'])//wont work here cause 
 //---------------------------BIND METHOD----------------------------------------------------------//
 //allows us to set the this variable explictly
 //however, bind doesnt call the function right away, but instead generates a copy of it so we can store it somewhere
+
+//Here, we will use the bind method to create a function with preset arguments and store it in a variable
+
+var johnFriendly = john.presentation.bind(john, 'friendly');//this method returns a function and gets stored in johnFriendly()
+johnFriendly('morning');// it worked!
