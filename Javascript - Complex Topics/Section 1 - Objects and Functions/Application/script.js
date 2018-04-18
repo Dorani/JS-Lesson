@@ -160,3 +160,14 @@ function isFullAge(el) {
 
 var fullAges = arrayCalc(ages, isFullAge);
 console.log(fullAges);//[true, true, true, false, true]
+
+//calculateAge max heartrate of adults
+function maxHeartRate(el) {
+    if(el >= 18 && el <= 81) {
+    return Math.round(206.9 - (0.67 * el));
+  } else {
+    return -1;
+  }
+}
+var rates = arrayCalc(ages, maxHeartRate);
+console.log(rates);//[189,173,154, -1, 195];
