@@ -44,3 +44,6 @@ john.presentation.apply(emily, ['friendly', 'afternoon'])//wont work here cause 
 
 var johnFriendly = john.presentation.bind(john, 'friendly');//this method returns a function and gets stored in johnFriendly()
 johnFriendly('morning');// it worked!
+johnFriendly('night');
+//Bind alows us to preset our arguments: Carrying - technique in which we create a function based off another function with some
+//preset parameters like above
