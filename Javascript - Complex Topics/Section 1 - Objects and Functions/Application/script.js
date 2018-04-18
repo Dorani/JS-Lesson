@@ -133,7 +133,7 @@ console.log(obj.city);//new york
 
 
 //////////////////////////////////////////////////////////////////////////////
-//FUNCTIONS:
+//FUNCTIONS, accepting functions as inputs:
 //array calc function looped through the years array, 5 times, and 5 times the calculateAge function was called and pushed results into new array
 var years = [1990, 1965, 1937, 2005, 1998];
 
@@ -153,7 +153,6 @@ var ages = arrayCalc(years, calculateAge);
 console.log(ages);//[26, 51, 79, 11, 18]
 
 //now a function that determines if a person is an adult
-
 function isFullAge(el) {
   return el >= 18;
 }
@@ -171,3 +170,28 @@ function maxHeartRate(el) {
 }
 var rates = arrayCalc(ages, maxHeartRate);
 console.log(rates);//[189,173,154, -1, 195];
+
+//------------------------------------------------
+//Functions returning a function
+
+function interviewQuestion(job){
+  if (job === 'designer') {
+    return function(name){
+      console.log(name + ', can you please explain what UX is?');
+    }
+  } else if (job === 'teacher'){
+    return function(name){
+      console.log('what subject do you teach' + ' ' + name + ' ?');
+    }
+  } else {
+    return function(name){
+      console.log('hello' + name + ', what do you do?');
+    }
+  }
+}
+
+var teacherQuestion = interviewQuestion('teacher');
+teacherQuestion('john');
+
+var designerQuestion = interviewQuestion('designer');
+designerQuestion('seif');
