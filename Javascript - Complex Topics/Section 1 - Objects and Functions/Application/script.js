@@ -134,12 +134,12 @@ console.log(obj.city);//new york
 
 //////////////////////////////////////////////////////////////////////////////
 //FUNCTIONS:
-
+//array calc function looped through the years array, 5 times, and 5 times the calculateAge function was called and pushed results into new array
 var years = [1990, 1965, 1937, 2005, 1998];
 
 function arrayCalc(arr, fn){
-  var arrRes = [];
-  for ( var i = 0; i < arr.length; i++){
+  var arrRes = [];//empty array
+  for ( var i = 0; i < arr.length; i++){//looping through the array
     arrRes.push(fn(arr[i]));
   }
   return arrRes;
@@ -148,3 +148,6 @@ function arrayCalc(arr, fn){
 function calculateAge(el) {
   return 2016 - el;
 }
+
+var ages = arrayCalc(years, calculateAge);
+console.log(ages);
