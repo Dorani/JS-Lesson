@@ -25,8 +25,15 @@ var emily = {
 
 
 john.presentation('formal', 'morning');
-
+//---------------------------CALL METHOD----------------------------------------------------------//
 //using the call method it allows the seting the this var to emily, so we can use johns method
 //method borrowing:
 john.presentation.call(emily, 'friendly', 'afternoon');//emily and it works!
 //we borrowed the method from john to use on the emily object
+
+//---------------------------APPLY METHOD----------------------------------------------------------//
+//Similar to above, except it only accepts arguments as an array:
+//ie:
+john.presentation.apply(emily, ['friendly', 'afternoon'])//wont work here cause our method does not expect to receive an array
+
+//---------------------------BIND METHOD----------------------------------------------------------//
