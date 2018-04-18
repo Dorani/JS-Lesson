@@ -37,3 +37,5 @@ john.presentation.call(emily, 'friendly', 'afternoon');//emily and it works!
 john.presentation.apply(emily, ['friendly', 'afternoon'])//wont work here cause our method does not expect to receive an array
 
 //---------------------------BIND METHOD----------------------------------------------------------//
+//allows us to set the this variable explictly
+//however, bind doesnt call the function right away, but instead generates a copy of it so we can store it somewhere
