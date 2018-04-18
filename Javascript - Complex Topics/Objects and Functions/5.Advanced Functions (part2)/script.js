@@ -21,8 +21,13 @@ function interviewQuestion(job){//accepts a string which is a job
   }
 }
 
-var teacherQuestion = interviewQuestion('teacher');
-teacherQuestion('john');
+var teacherQuestion = interviewQuestion('teacher');//create a var and store question always for teacher, make sure you pass in the string teacher
+teacherQuestion('john');//calling the var which is a function and pass in the name john since it accepts a name as an input
 
 var designerQuestion = interviewQuestion('designer');
 designerQuestion('seif');
+
+//interviewQuestion will not just return a value like with other Functions
+//instead it returns an entire function we can then use later
+//because functions are 1st class functions in JS, they are effectively Objects
+//we essentially return an object
