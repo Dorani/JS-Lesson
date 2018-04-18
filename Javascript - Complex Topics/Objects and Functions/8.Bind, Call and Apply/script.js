@@ -47,3 +47,7 @@ johnFriendly('morning');// it worked!
 johnFriendly('night');
 //Bind alows us to preset our arguments: Carrying - technique in which we create a function based off another function with some
 //preset parameters like above
+
+
+var emilyFormal = john.presentation.bind(emily,'formal');
+emilyFormal('afternoon');
