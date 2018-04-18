@@ -150,4 +150,13 @@ function calculateAge(el) {
 }
 
 var ages = arrayCalc(years, calculateAge);
-console.log(ages);
+console.log(ages);//[26, 51, 79, 11, 18]
+
+//now a function that determines if a person is an adult
+
+function isFullAge(el) {
+  return el >= 18;
+}
+
+var fullAges = arrayCalc(ages, isFullAge);
+console.log(fullAges);//[true, true, true, false, true]
