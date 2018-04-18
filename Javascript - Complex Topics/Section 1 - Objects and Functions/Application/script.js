@@ -130,3 +130,21 @@ console.log(obj.city);//new york
 //we passed the age variable holding a primitive and object var holding a reference to an object into our function
 //this function then, as it was invoked, attempted to change the arguments that we passed into it
 //when we console log the value, we see the primitive is unchanged, but city goes from sf to new york
+
+
+//////////////////////////////////////////////////////////////////////////////
+//FUNCTIONS:
+
+var years = [1990, 1965, 1937, 2005, 1998];
+
+function arrayCalc(arr, fn){
+  var arrRes = [];
+  for ( var i = 0; i < arr.length; i++){
+    arrRes.push(fn(arr[i]));
+  }
+  return arrRes;
+}
+
+function calculateAge(el) {
+  return 2016 - el;
+}
