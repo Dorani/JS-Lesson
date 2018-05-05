@@ -31,7 +31,7 @@ console.log('This is ' + firstName + ' ' + lastName +
 
 //String methods:
 
-const n = '${firstName} ${lastName}';
+const n = `${firstName} ${lastName}`;
 console.log(n.startsWith('J'));
 //true
 console.log(n.endsWith('th'));
@@ -40,3 +40,5 @@ console.log(n.includes(' '));
 //true - there is a space between John and Smith
 console.log(firstName.repeat(5));
 //johnjohnjohnjohnjohn
+console.log(`${firstName}`.repeat(5));
+//john john john john john
