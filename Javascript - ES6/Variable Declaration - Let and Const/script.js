@@ -48,3 +48,15 @@ driversLicense6(true);//John, born in 1990, and can drive!
 //and const are are only accesible within inside the block
 //also if you define the const and let and then define the value inside, you can with let
 //but not const!
+
+
+
+
+//---------------//
+
+let i = 23;
+
+for(let i = 0; i < 5; i++){
+  console.log(i);//0 1 2 3 4
+}
+console.log(i);//23
