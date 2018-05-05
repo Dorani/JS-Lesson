@@ -15,9 +15,10 @@ var ages5 = years.map(function(el){
 console.log(ages5);//26,51,34,79
 
 //ES6
-const ages6 = years.map(el => 2016 - el);
+let ages6 = years.map(el => 2016 - el);
 //el is the argument
 //=> operator
 //return statement
 
 //no function keyword, no return, not braces, its that simple!!
+console.log(ages6);//26,51,34,79
