@@ -36,3 +36,5 @@ console.log(n.startsWith('J'));
 //true
 console.log(n.endsWith('th'));
 //true
+console.log(n.includes(' '));
+//true - there is a space between John and Smith
