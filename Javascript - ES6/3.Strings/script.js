@@ -34,3 +34,5 @@ console.log('This is ' + firstName + ' ' + lastName +
 const n = '${firstName} ${lastName}';
 console.log(n.startsWith('J'));
 //true
+console.log(n.endsWith('th'));
+//true
