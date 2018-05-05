@@ -60,3 +60,7 @@ for(let i = 0; i < 5; i++){
   console.log(i);//0 1 2 3 4
 }
 console.log(i);//23
+
+//They happen to have the same name but they are seperate variables
+//2 completely different scopes
+//If we used, var, the value would be overridden and the new i would be 5
