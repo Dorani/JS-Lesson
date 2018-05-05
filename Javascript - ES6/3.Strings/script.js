@@ -27,3 +27,10 @@ console.log('This is ' + firstName + ' ' + lastName +
  ${yearOfBirth} and today he is ${calcAge(yearOfBirth)} years old`);
 //This is John Smith. He was born in
 //1990 and today he is 26 years old
+
+
+//String methods:
+
+const n = '${firstName} ${lastName}';
+console.log(n.startsWith('J'));
+//true
