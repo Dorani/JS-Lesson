@@ -16,3 +16,16 @@ let age = 23; //since this value can mutate/change
 name6 = 'Jane Miller';
 console.log(name6)//error - if we attempt to change the value of a constant
 //it will throw an error - Assignment to constant variable...
+
+
+//ES5
+function driversLicense(passedTest) {
+  if (passedTest) {
+    var firstName = 'John';
+    var yearOfBirth = 1990;
+
+    console.log(firstName + ' born in ' + yearOfBirth + ', and can drive!');
+  }
+}
+
+driversLicense(true);
