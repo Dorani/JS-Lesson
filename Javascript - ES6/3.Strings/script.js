@@ -38,3 +38,5 @@ console.log(n.endsWith('th'));
 //true
 console.log(n.includes(' '));
 //true - there is a space between John and Smith
+console.log(firstName.repeat(5));
+//johnjohnjohnjohnjohn
