@@ -14,3 +14,7 @@ var box = {
 }
 
 box5.clickMe();
+//undefined because this points to the global obj in this particular case
+//Only method call with a this keyword, will point to that object
+  //However, a regular function call, the this keyword will always point
+  //to the global obj
