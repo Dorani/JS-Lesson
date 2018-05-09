@@ -25,3 +25,22 @@ box5.clickMe();
   //its a regular function call, so the this keyword, points at the window global object
   //and so, the position and color attributes are not defined in the window object
   //so..... we get undefined.
+
+
+//How to avoid the above:
+
+var box = {
+  color: 'green',
+  position: 1,
+  clickMe: function(){
+    var self = this;//self var points to this - so we can use it later on
+    document.querySelector('.green').addEventListener('click',function(){
+      var str = 'this is box number ' + self.position + ' and it is ' +
+      self.color;
+      alert(str);
+  });
+  }
+}
+
+box5.clickMe();
+//the box number is 1 and it is green
