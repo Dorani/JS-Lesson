@@ -44,3 +44,8 @@ var box = {
 
 box5.clickMe();
 //the box number is 1 and it is green
+
+
+                              //ES6:
+
+//Arrow functions help us avoid the above hack:
