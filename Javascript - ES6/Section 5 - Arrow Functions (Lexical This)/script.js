@@ -29,7 +29,7 @@ box5.clickMe();
 
 //How to avoid the above:
 
-var box = {
+var box5 = {
   color: 'green',
   position: 1,
   clickMe: function(){
@@ -49,3 +49,19 @@ box5.clickMe();
                               //ES6:
 
 //Arrow functions help us avoid the above hack:
+//we have access to the this keyword of this method
+//because the arrow function shares the lexical this keyword of its surrounds
+const box6 = {
+  color: 'green',
+  position: 1,
+  clickMe: function(){
+
+    document.querySelector('.green').addEventListener('click',() => {
+      var str = 'this is box number ' + this.position + ' and it is ' +
+      this.color;
+      alert(str);
+  });
+  }
+}
+
+box6.clickMe();
