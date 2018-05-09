@@ -65,3 +65,23 @@ const box6 = {
 }
 
 box6.clickMe();
+
+
+
+//Deeper ES6 ON ABOVE:
+
+const box66 = {
+  color: 'green',
+  position: 1,
+  clickMe: () => {//THIS would make it point to the global obj and return undefined vals
+    //same issue as beginning, we dont have access to those vals
+    //so be careful with arrow functions!
+    document.querySelector('.green').addEventListener('click',() => {
+      var str = 'this is box number ' + this.position + ' and it is ' +
+      this.color;
+      alert(str);
+  });
+  }
+}
+
+box66.clickMe();
