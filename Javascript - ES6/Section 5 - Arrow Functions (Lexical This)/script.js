@@ -67,21 +67,19 @@ const box6 = {
 box6.clickMe();
 
 
+//------------------------------------------------------------
+//Create a function constructor with a person object
 
-//Deeper ES6 ON ABOVE:
-
-const box66 = {
-  color: 'green',
-  position: 1,
-  clickMe: () => {//THIS would make it point to the global obj and return undefined vals
-    //same issue as beginning, we dont have access to those vals
-    //so be careful with arrow functions!
-    document.querySelector('.green').addEventListener('click',() => {
-      var str = 'this is box number ' + this.position + ' and it is ' +
-      this.color;
-      alert(str);
+function Person(name) {
+  this.name = name;
+}
+//ES5
+Person.prototype.myFriends5 = function(friends) {
+  var arr = friends.map(function(el){
+    return this.name + ' is friends with ' + el;
   });
-  }
+  console.log(arr);
 }
 
-box66.clickMe();
+var friends = ['bob', 'jane', 'mark'];
+new Person('john').myFriends5(friends);
