@@ -1,4 +1,4 @@
-//ES5:
+                              //ES5:
 
 var box = {
   color: 'green',
