@@ -37,3 +37,6 @@ ages6  = years.map((el, index) => {
   const age = now - el;
   return `Age element ${index + 1}: ${age}.`;
 });
+
+
+//----------------------------------------------------------------
