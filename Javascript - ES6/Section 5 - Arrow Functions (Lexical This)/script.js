@@ -75,9 +75,10 @@ function Person(name) {
 }
 //ES5
 Person.prototype.myFriends5 = function(friends) {
+
   var arr = friends.map(function(el){
     return this.name + ' is friends with ' + el;
-  });
+  }.bind(this));//copy of func with a manually defined this keyword
   console.log(arr);
 }
 
