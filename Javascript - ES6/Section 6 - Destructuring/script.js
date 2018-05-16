@@ -12,3 +12,9 @@
 var john = ['john', 26];
 var name = john[0];
 var age = john[1];
+
+
+//ES6
+
+const [name, age] = ['John', 26];
+//creates a constant called name and age, then data is stored in each of those variables
