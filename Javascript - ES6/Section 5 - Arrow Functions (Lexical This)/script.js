@@ -73,7 +73,7 @@ box6.clickMe();
 function Person(name) {
   this.name = name;
 }
-//ES5
+                      //ES5
 Person.prototype.myFriends5 = function(friends) {
 
   var arr = friends.map(function(el){
@@ -84,3 +84,10 @@ Person.prototype.myFriends5 = function(friends) {
 
 var friends = ['bob', 'jane', 'mark'];
 new Person('john').myFriends5(friends);
+
+
+                      //ES6
+Person.prototype.myFriends6 = function(friends) {
+var arr = friends.map(el => `${this.name} is friends with ${el}`);
+console.log(arr);
+}
