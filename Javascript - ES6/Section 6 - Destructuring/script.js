@@ -26,3 +26,15 @@ console.log(age);
 // left side destructus data stucture and right side builds a new one
 
 //With an Object:
+
+const obj = {
+  firstName: 'john',
+  lastName: 'smith'
+};
+
+const{firstName, lastName} = obj;//creates 2 brand new constants
+//which stores the data out of the object
+console.log(firstName);
+console.log(lastName);
+//john
+//smith
