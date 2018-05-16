@@ -38,3 +38,8 @@ console.log(firstName);
 console.log(lastName);
 //john
 //smith
+
+const {firstName: a, lastName: b} = obj;
+console.log(a);
+console.log(b);
+//returns the same
