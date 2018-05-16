@@ -18,3 +18,11 @@ var age = john[1];
 
 const [name, age] = ['John', 26];
 //creates a constant called name and age, then data is stored in each of those variables
+console.log(name);
+console.log(age);
+//john
+//26
+
+// left side destructus data stucture and right side builds a new one
+
+//With an Object:
