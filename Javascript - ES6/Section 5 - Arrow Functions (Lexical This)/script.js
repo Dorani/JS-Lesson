@@ -91,3 +91,5 @@ Person.prototype.myFriends6 = function(friends) {
 var arr = friends.map(el => `${this.name} is friends with ${el}`);
 console.log(arr);
 }
+
+new Person('mike').myFriends6(friends);
