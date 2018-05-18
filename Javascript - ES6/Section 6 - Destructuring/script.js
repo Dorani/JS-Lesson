@@ -63,3 +63,6 @@ function calcAgeRetirement(year) {
 const [age, retirement] = calcAgeRetirement(1990);
 console.log(age);//28
 console.log(retirement);//37
+
+//these are the 2 return values that come from our function
+//destructing is a good solution for this case
