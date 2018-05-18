@@ -58,5 +58,8 @@ function calcAgeRetirement(year) {
   return [age, 65 - age];//return an array with this data
 }
 
-//based on a year that we input
-//new date created and gave it a constant
+//using destructing to store it into diff variables
+
+const [age, retirement] = calcAgeRetirement(1990);
+console.log(age);//28
+console.log(retirement);//37
