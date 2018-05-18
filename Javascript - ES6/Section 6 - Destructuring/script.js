@@ -43,3 +43,8 @@ const {firstName: a, lastName: b} = obj;
 console.log(a);
 console.log(b);
 //returns the same
+
+
+
+//a function that returns the age of a person
+//as well as the remaining time before retirement
