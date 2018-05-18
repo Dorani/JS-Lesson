@@ -27,3 +27,6 @@ boxesArr5.forEach(function(cur) {
 
 
                     //ES6
+const boxesArr6 = Array.from(boxes);
+//transform this node list to an array, as simple as that
+//es6 rocks
