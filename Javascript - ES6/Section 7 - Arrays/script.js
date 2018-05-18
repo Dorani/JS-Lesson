@@ -22,3 +22,8 @@ var boxesArr5 = Array.prototype.slice.call(boxes);
 boxesArr5.forEach(function(cur) {
   cur.style.backgroundColor = 'dodgerblue';
 });
+
+
+
+
+                    //ES6
