@@ -44,7 +44,19 @@ console.log(a);
 console.log(b);
 //returns the same
 
+//-------------------------------------------------------------
 
 
-//a function that returns the age of a person
+//Example: a function that returns the age of a person
 //as well as the remaining time before retirement
+
+//based on a year that we input
+//new date created and gave it a constant
+
+function calcAgeRetirement(year) {
+  const age = new Date().getFullYear() - year;//instead of hardcoding, get current date and use that to calc retirement
+  return [age, 65 - age];//return an array with this data
+}
+
+//based on a year that we input
+//new date created and gave it a constant
