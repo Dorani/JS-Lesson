@@ -30,3 +30,6 @@ boxesArr5.forEach(function(cur) {
 const boxesArr6 = Array.from(boxes);
 //transform this node list to an array, as simple as that
 //es6 rocks
+boxesArr6.forEach(cur => cur.style.backgroundColor = 'dodgerblue');
+
+//the power of es6 guys!
