@@ -55,4 +55,8 @@ console.log(ages[full.indexOF(true)]);//21
 
 
 //ES6
-  console.log(ages.findIndex(cur => cur >= 18));
+//findIndex method, with a callback function that has access to the current element, index and entire array
+//retrieve the index for the element in which this callback function ( cur >= 18)
+  console.log(ages.findIndex(cur => cur >= 18));//3
+//retrieve element
+  console.log(ages.find(cur => 18)); //21
