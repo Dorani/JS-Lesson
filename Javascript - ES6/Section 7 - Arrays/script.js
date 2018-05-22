@@ -35,3 +35,14 @@ boxesArr6.forEach(cur => cur.style.backgroundColor = 'dodgerblue');
 //the power of es6 guys!
 
 //-------------------------------------------------------------
+
+
+//Suppose we have a group of children, and we know one of them is an adult/teen
+
+//es5
+var ages = [12,17,8,32,24,11];
+
+var full = ages.map(function(cur){
+  return cur >= 18;
+});
+console.log(full);//f,f,f,t,f,f
