@@ -36,4 +36,9 @@ boxesArr5[i].textContent = 'i changed to blue!';
                 //ES6 - Loops!
 
 
-for (const current of boxesArr6)
+for (const current of boxesArr6) {
+  if (boxesArr6.className === 'box blue') {
+    continue;
+  }
+  current.textContent = 'i changed to blue';
+}
