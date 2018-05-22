@@ -55,3 +55,4 @@ console.log(ages[full.indexOF(true)]);//21
 
 
 //ES6
+  console.log(ages.findIndex(cur => cur >= 18));
