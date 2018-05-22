@@ -37,7 +37,7 @@ boxesArr5[i].textContent = 'i changed to blue!';
 
 
 for (const current of boxesArr6) {
-  if (boxesArr6.className.includes('blue')) {
+  if (boxesArr6.className.includes('blue')) { //includes methods allows us to isolate an element with specific content
     continue;
   }
   current.textContent = 'i changed to blue';
