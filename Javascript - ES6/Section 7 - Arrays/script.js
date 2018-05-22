@@ -34,8 +34,8 @@ boxesArr6.forEach(cur => cur.style.backgroundColor = 'dodgerblue');
 
 //the power of es6 guys!
 
-
-//ES5 - Loops!
+//-------------------------------------------------------------
+              //ES5 - Loops!
 
 for(var i = 0; i < boxesArr5.length; i++){
   if (boxesArr5[i].className === 'box blue'){
