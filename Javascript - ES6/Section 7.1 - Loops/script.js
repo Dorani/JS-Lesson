@@ -27,3 +27,6 @@ boxesArr5[i].textContent = 'i changed to blue!';
 
 
                 //ES6 - Loops!
+
+
+for (const current of boxesArr6)
