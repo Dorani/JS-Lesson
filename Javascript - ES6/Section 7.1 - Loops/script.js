@@ -37,7 +37,7 @@ boxesArr5[i].textContent = 'i changed to blue!';
 
 
 for (const current of boxesArr6) {
-  if (boxesArr6.className === 'box blue') {
+  if (boxesArr6.className.includes('blue')) {
     continue;
   }
   current.textContent = 'i changed to blue';
