@@ -40,7 +40,7 @@ boxesArr6.forEach(cur => cur.style.backgroundColor = 'dodgerblue');
 //Suppose we have a group of children, and we know one of them is an adult/teen
 
 //es5
-var ages = [12,17,8,32,24,11];
+var ages = [12,17,8,21,14,11];
 
 var full = ages.map(function(cur){
   return cur >= 18;
