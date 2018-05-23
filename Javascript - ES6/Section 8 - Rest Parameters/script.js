@@ -1,3 +1,18 @@
 //Rest Parameters
 //Allow us to pass an arbritratry number of arguments into a function
 //Then use those arguments in that function
+
+//They are the exact oposite of spread operators but have similar syntax
+//The spread operator takes an array and transforms it into a single value
+//The rest Parameters receive a couple of single values and transforms them into
+//an array when we call a function with multiple Parameters
+
+
+
+
+//Example: function that receives an arbritratry number of years and then prints
+//to the console whether each person corresponding to these years is greater than 21
+
+
+                          //ES5
+                          
