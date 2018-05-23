@@ -36,5 +36,5 @@ console.log(sum3)//81
 const familySmith = ['John', 'Jane', 'Mark'];
 const familyMiller = ['Mary', 'Bob', 'Ann'];
 
-const bigFamily = [...familySmith,...familyMiller];
+const bigFamily = [...familySmith,'Lily',...familyMiller];
 console.log(bigFamily);
