@@ -38,3 +38,12 @@ const familyMiller = ['Mary', 'Bob', 'Ann'];
 
 const bigFamily = [...familySmith,'Lily',...familyMiller];
 console.log(bigFamily);
+
+
+//2 nodelists
+//select this heading and boxes and change text color of all 4 elements to purple
+
+const h = document.querySelector('h1');
+const boxes = document.querySelector('.box');
+
+const all = [h, ...boxes];
