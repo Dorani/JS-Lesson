@@ -17,6 +17,8 @@
                           //ES5
 function isFullAge5() {
   console.log(arguments);
+  //transforing arguments into an array with this es5 hack
+  var argsArr = Array.prototype.slice.call(arguments);
 }
 
 isFullAge5(1990, 1999, 1965);//1990, 1999, 1965 = arguments variable
