@@ -2,6 +2,9 @@
   //Convenient way to expand elements of an array in places like arguments
   //and function calls
 
+
+//func that takes in 4 arguments
+//returns the addition
 function addFourAges(a,b,c,d) {
   return a + b + c + d;
 }
