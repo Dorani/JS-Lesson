@@ -15,4 +15,9 @@
 
 
                           //ES5
-                          
+function isFullAge5() {
+  console.log(arguments);
+}
+
+isFullAge5(1990, 1999, 1965);//1990, 1999, 1965 = arguments variable
+//arguments is an 'array' like structure but NOT an array
