@@ -27,3 +27,14 @@ function isFullAge5() {
 
 isFullAge5(1990, 1999, 1965);//1990, 1999, 1965 = arguments variable
 //TRUE, FALSE, TRUE
+
+
+
+                          //ES6
+//using the rest Parameter operator ... then the name of variable
+function isFullAge6(...years){//tranform arguements into an array as soon as function is called, then pass it into function
+  console.log(isFullAge6);
+}
+isFullAge5(1990, 1999, 1965);
+//now we see that this will log an array to the console as the data structure
+//so we already skip the step to slice etc..
