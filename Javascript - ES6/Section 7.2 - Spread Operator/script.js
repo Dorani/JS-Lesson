@@ -41,6 +41,11 @@ console.log(bigFamily);
 
 
 //2 nodelists
+
+//h is not a nodelist, its simply a node, because its a query selector, but then the boxes gives use the nodelist, so we use the spread
+//operator to expand it then we have the 4 elements stored in the nodelist'
+
+
 //select this heading and boxes and change text color of all 4 elements to purple
 
 const h = document.querySelector('h1');
