@@ -54,3 +54,4 @@ const boxes = document.querySelector('.box');
 const all = [h, ...boxes];
 
 //transform nodelist into array then loop through it
+Array.from(all).forEach(cur => cur.style.color = 'purple');
