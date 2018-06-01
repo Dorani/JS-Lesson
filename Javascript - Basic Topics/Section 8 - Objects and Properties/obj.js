@@ -18,7 +18,7 @@ var person = {
   isMarried: false
 };
 console.log(person);
-//all of these key value pairs as an indivisual variable inside the John object:
+//all of these key value pairs as an indivisual variable inside the Person object:
 
 //now to retrieve an element inside of an object:
 
