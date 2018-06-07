@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id="container">
+		<p>Win Count: <span id="wins"></span></p>
+		<p>Loss Count: <span id="losses"></span></p>
+		<p>Tie Count: <span id="ties"></span></p>
+		<p>What you pressed <span id="userChoice"></span></p>
+		<p>What computer pressed <span id="computerChoice"></span></p>
+	</div>
+
+<script type="text/javascript">
+	var options = ['r', 'p', 's'];
+
+	var ties = 0;
+	var wins = 0;
+	var losses = 0;
+
+	var ties_span = document.querySelector('#ties');
+	var wins_span = document.querySelector('#wins');
+	var losses_span = document.querySelector('#losses');
+
+	ties_span.innerText = ties;
+	wins_span.innerText = wins;
+	losses_span.innerText = losses;
+
+	function playGame(ev){
+		var computerOptionIndex = Math.floor(Math.random()*options.length);
+
+		var computerOption = options[computerOptionIndex];
+
+		var userChoice = ev.key;
+
+		document.querySelector('#userChoice').innerText = userChoice;
+		document.querySelector('#computerChoice').innerText = computerOption;
+
+		if (userChoice == computerOption){
+			ties++;
+			ties_span.innerText = ties;
+		}else if (userChoice == 'r' && computerOption == 'p'){
+			losses++;
+			losses_span.innerText = losses;
+		}else if (userChoice == 's' && computerOption == 'r'){
+			losses++;
+			losses_span.innerText = losses;
+		}else if (userChoice == 'p' && computerOption == 's'){
+			losses++;
+			losses_span.innerText = losses;
+		}else {
+			wins++;
+			wins_span.innerText = wins;
+		}
+	}
+
+	document.onkeyup = playGame;
+</script>
+</body>
+</html>

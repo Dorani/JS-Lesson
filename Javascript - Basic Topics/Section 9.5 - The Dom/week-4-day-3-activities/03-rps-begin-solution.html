@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+	var options = ['r', 'p', 's'];
+
+	var ties = 0;
+
+	function playGame(ev){
+		var computerOptionIndex = Math.floor(Math.random()*options.length);
+
+		var computerOption = options[computerOptionIndex];
+
+		var userChoice = ev.key;
+
+		alert('computer picked ' + computerOption);
+		alert('user picked ' + userChoice);
+
+		if (userChoice == computerOption){
+			ties++;
+			alert('you tied ' + ties);
+		}
+	}
+
+	document.onkeyup = playGame;
+
+</script>
+</body>
+</html>

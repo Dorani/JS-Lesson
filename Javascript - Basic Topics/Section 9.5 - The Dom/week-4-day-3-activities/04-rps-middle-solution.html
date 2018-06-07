@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id="container">
+		<p>Tie Count: <span id="ties"></span></p>
+		<p>What you pressed <span id="userChoice"></span></p>
+		<p>What computer pressed <span id="computerChoice"></span></p>
+	</div>
+
+<script type="text/javascript">
+	var options = ['r', 'p', 's'];
+
+	var ties = 0;
+
+	var ties_span = document.querySelector('#ties');
+	ties_span.innerText = ties;
+
+	function playGame(ev){
+		var computerOptionIndex = Math.floor(Math.random()*options.length);
+
+		var computerOption = options[computerOptionIndex];
+
+		var userChoice = ev.key;
+
+		document.querySelector('#userChoice').innerText = userChoice;
+		document.querySelector('#computerChoice').innerText = computerOption;
+
+		if (userChoice == computerOption){
+			ties++;
+			ties_span.innerText = ties;
+		}
+	}
+
+	document.onkeyup = playGame;
+
+</script>
+</body>
+</html>
