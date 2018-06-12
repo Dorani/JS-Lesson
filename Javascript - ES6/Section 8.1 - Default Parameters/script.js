@@ -3,7 +3,7 @@
   //to be preset - ie: default values
 
 
-//ES5 - STYLE:
+                    //ES5 - STYLE:
 //constructor function that takes 4 parameters
 
 function SmithPerson(firstName, yearOfBirth,
@@ -35,3 +35,6 @@ var John = new SmithPerson('John', 1990); //assigned undefined for the non passe
 
 var emily = new SmithPerson('Emily', 1983, 'Diaz', 'spanish');
 //this will override the default parameters
+
+
+                    //ES6 - STYLE:
