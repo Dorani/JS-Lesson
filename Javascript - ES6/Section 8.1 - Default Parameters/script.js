@@ -38,3 +38,16 @@ var emily = new SmithPerson('Emily', 1983, 'Diaz', 'spanish');
 
 
                     //ES6 - STYLE:
+function smithPerson(firstName, yearOfBirth,
+   lastName="smith", nationality="american") {
+     this.firstName = firstName;
+     this.yearOfBirth = yearOfBirth;
+     this.lastName = lastName;
+     this.nationality = nationality;
+   }
+
+//All we need to do above, is specify the default Parameters
+//where we declare the parameters, this is so freaking cool
+
+var John = new SmithPerson('John', 1990); //assigned undefined for the non passed in params
+var emily = new SmithPerson('Emily', 1983, 'Diaz', 'spanish');
