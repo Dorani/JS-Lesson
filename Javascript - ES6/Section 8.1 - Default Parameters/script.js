@@ -32,3 +32,6 @@ var John = new SmithPerson('John', 1990); //assigned undefined for the non passe
 //but we still have 4 defined, because we implimented something similar to default Parameters
 
 //To override:
+
+var emily = new SmithPerson('Emily', 1983, 'Diaz', 'spanish');
+//this will override the default parameters
