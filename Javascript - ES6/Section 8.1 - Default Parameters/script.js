@@ -8,6 +8,14 @@
 
 function SmithPerson(firstName, yearOfBirth,
    lastName, nationality) {
+
+     //defaulting parameters
+     //if lastName is undefined
+     //then let the lastName be Smith
+     //else its simply lastName
+     lastName === undefined ? lastName = 'Smith' : lastName
+
+
      this.firstName = firstName;
      this.yearOfBirth = yearOfBirth;
      this.lastName = lastName;
