@@ -5,7 +5,7 @@
 
 //ES5 - STYLE:
 //constructor function that takes 4 parameters
-//
+
 function SmithPerson(firstName, yearOfBirth,
    lastName, nationality) {
      this.firstName = firstName;
@@ -13,3 +13,7 @@ function SmithPerson(firstName, yearOfBirth,
      this.lastName = lastName;
      this.nationality = nationality;
    }
+
+//use the function constructor and create a new person called John
+
+var John = new SmithPerson('John', 1990); //assigned undefined for the non passed in params
