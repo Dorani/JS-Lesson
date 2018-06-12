@@ -25,3 +25,5 @@ function SmithPerson(firstName, yearOfBirth,
 //use the function constructor and create a new person called John
 
 var John = new SmithPerson('John', 1990); //assigned undefined for the non passed in params
+//console:
+//{firstName: "John", yearOfBirth: 1990, lastName: "Smith", nationality: "American"}
