@@ -27,3 +27,8 @@ function SmithPerson(firstName, yearOfBirth,
 var John = new SmithPerson('John', 1990); //assigned undefined for the non passed in params
 //console:
 //{firstName: "John", yearOfBirth: 1990, lastName: "Smith", nationality: "American"}
+
+//we only called the SmithPerson function constructor with 2 arguements
+//but we still have 4 defined, because we implimented something similar to default Parameters
+
+//To override:
