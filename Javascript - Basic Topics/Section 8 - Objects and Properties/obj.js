@@ -32,6 +32,8 @@ console.log(person['lastName']);
 
 //Data mutation:
 person.lastName = 'miller';
+
+//Diff way:
 person['job'] = ['software'];
 
 console.log(person);

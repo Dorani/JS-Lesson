@@ -17,12 +17,8 @@ Person.prototype.calculateAge = function(){//simply a property and then we add o
   console.log(2018 - this.yearOfBirth);
 }
 
-//Adding a property to a prototype:
 
-Person.prototype.lastName = 'smith';
-console.log(john.lastName)
-console.log(jane.lastName)
-console.log(mark.lastName)
+
 
 //instances of the person object
 //intantiation:
@@ -32,6 +28,13 @@ var john = new Person('john', 1990, 'teacher');//how to create new objects using
   //that has a "this" variable is:
   //pointing to the empty object created with the new operator
   //assigned to the john variable
+
+//Adding a property to a prototype:
+
+Person.prototype.lastName = "smith";
+console.log(john.lastName)
+console.log(john)
+
 
 
 //create more objects for more people:
@@ -43,6 +46,11 @@ john.calculateAge();
 jane.calculateAge();
 mark.calculateAge();
 
+
+Person.prototype.social = 333222999;
+
+
+console.log(mark);
 //Again, the method, is not in the constructor, and we can still use it!
 //Because it is in the prototype property of our function constructor
 //This is inheretence in practice

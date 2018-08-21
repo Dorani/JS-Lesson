@@ -14,7 +14,7 @@ var john = Object.create(personProto);
 john.name = 'john';
 john.yearOfBirth = 1990;
 john.job = 'teacher';
-
+console.log(john);
 
 //----------------
 
