@@ -11,15 +11,6 @@ var Person = function(name, yearOfBirth, job){
   this.job = job;
 }
 
-//adding a method to the function constructor prototype property:
-
-Person.prototype.calculateAge = function(){//simply a property and then we add our function
-  console.log(2018 - this.yearOfBirth);
-}
-
-
-
-
 //instances of the person object
 //intantiation:
 var john = new Person('john', 1990, 'teacher');//how to create new objects using the constructor functions
@@ -28,6 +19,19 @@ var john = new Person('john', 1990, 'teacher');//how to create new objects using
   //that has a "this" variable is:
   //pointing to the empty object created with the new operator
   //assigned to the john variable
+
+
+console.log(john);
+
+//adding a method to the function constructor prototype property:
+//simply a property and then we add our function
+
+Person.prototype.calculateAge = function(){
+  console.log(2018 - this.yearOfBirth);
+}
+
+console.log(john);
+
 
 //Adding a property to a prototype:
 
