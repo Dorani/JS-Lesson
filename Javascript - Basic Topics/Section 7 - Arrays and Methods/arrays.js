@@ -29,6 +29,11 @@ console.log(names);
 
 var john = ['john', 'smith', 1990 , 'designer', false];
 //strings numbers and booleans all in the same array
+var length = john.length;
+console.log(length);
+
+var indexLast = john.length - 1;
+console.log(indexLast);
 
 //push methodadds element at end of array
 john.push('blue');

@@ -1,5 +1,9 @@
-//FUNCTIONS, accepting functions as inputs:
-//array calc function looped through the years array, 5 times, and 5 times the calculateAge function was called and pushed results into new array
+//FUNCTIONS, accepting functions as aguments:
+
+//array calc function looped through the years array, 5 times,
+//and 5 times the calculateAge function was called
+//and pushed these results into a new array:
+
 var years = [1990, 1965, 1937, 2005, 1998];
 
 function arrayCalc(arr, fn){
@@ -17,13 +21,62 @@ function calculateAge(el) {
 var ages = arrayCalc(years, calculateAge);
 console.log(ages);//[26, 51, 79, 11, 18]
 
+
+
 //now a function that determines if a person is an adult
+
+
+
+
+
+
+
+
+
+
+//calculateAge max heartrate of adults
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function isFullAge(el) {
   return el >= 18;
 }
 
 var fullAges = arrayCalc(ages, isFullAge);
 console.log(fullAges);//[true, true, true, false, true]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //calculateAge max heartrate of adults
 function maxHeartRate(el) {
