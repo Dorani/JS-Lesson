@@ -18,20 +18,6 @@
 //test it and out and explore!
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function anualRent(monthly){
   var anual = monthly * 12;
   return anual;
@@ -43,6 +29,8 @@ console.log('-------------------------------------')
 
 function fixedCost(rent, salary, name) {
     var bottomLine = salary - anualRent(rent);
+
+    console.log(bottomLine);
     //Display P&L
     if (bottomLine > 0){
       console.log('P&L: ' + "+" + bottomLine);

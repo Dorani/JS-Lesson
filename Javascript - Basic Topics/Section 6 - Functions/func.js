@@ -15,12 +15,14 @@ var calculateAge = function(yearOfBirth){
 calculateAge(1999);
 
 function calculateAge(yearOfBirth){
-  var age = 2018 - yearOfBirth;
+  var age = 2019 - yearOfBirth;
   return age;
 }
 var ageJohn = calculateAge(1990);
 var ageMike = calculateAge(1967);
 var ageMarry = calculateAge(1877);
+
+
 console.log(ageJohn);
 console.log(ageMike);
 console.log(ageMarry);

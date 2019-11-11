@@ -23,6 +23,8 @@ console.log('This is ' + firstName + ' ' + lastName +
 //In ES6:
 //We have template literals, ie we use backticks:
 //Allows you to write the text within the backticks and the variables!
+
+
  console.log(`This is ${firstName} ${lastName}. He was born in
  ${yearOfBirth} and today he is ${calcAge(yearOfBirth)} years old`);
 //This is John Smith. He was born in

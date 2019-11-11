@@ -6,6 +6,8 @@
 
 var years = [1990, 1965, 1937, 2005, 1998];
 
+
+
 function arrayCalc(arr, fn){
   var arrRes = [];//empty array
   for ( var i = 0; i < arr.length; i++){//looping through the array
@@ -15,7 +17,7 @@ function arrayCalc(arr, fn){
 }
 
 function calculateAge(el) {
-  return 2016 - el;
+  return 2018 - el;
 }
 
 var ages = arrayCalc(years, calculateAge);
@@ -24,58 +26,12 @@ console.log(ages);//[26, 51, 79, 11, 18]
 
 
 //now a function that determines if a person is an adult
-
-
-
-
-
-
-
-
-
-
-//calculateAge max heartrate of adults
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function isFullAge(el) {
   return el >= 18;
 }
 
-var fullAges = arrayCalc(ages, isFullAge);
-console.log(fullAges);//[true, true, true, false, true]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+var adult = arrayCalc(ages, isFullAge);
+console.log(adult);//[true, true, true, false, true]
 
 
 //calculateAge max heartrate of adults
