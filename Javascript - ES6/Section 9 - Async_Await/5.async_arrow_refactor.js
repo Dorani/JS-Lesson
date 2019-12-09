@@ -9,8 +9,6 @@ async function fectchAlbums() {
 fectchAlbums();
 
 
-
-
 //Async await arrow function style refactor:
 
 const fectchAlbums = async () => {

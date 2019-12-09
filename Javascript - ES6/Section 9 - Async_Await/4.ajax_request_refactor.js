@@ -6,7 +6,6 @@ function fectchAlbums() {
 
 //Refactor, es2017, async/await, designed to handle async code
 
-
 //Once you have identified your asynchronous code, do the following:
 
 // step 1
@@ -27,3 +26,4 @@ async function fectchAlbums() {
     //then consoling out the response
     console.log(json)
 }
+fectchAlbums();
